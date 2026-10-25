@@ -1,0 +1,18 @@
+{
+  "mcpServers": {
+    "mcd-privacy-gateway": {
+      "command": "python",
+      "args": ["server.py"],
+      "env": {
+        "MCD_MCP_TOKEN": "${MCD_MCP_TOKEN}"
+      }
+    },
+    "mcd-mcp": {
+      "type": "streamablehttp",
+      "url": "https://mcp.mcd.cn",
+      "headers": {
+        "Authorization": "Bearer ${MCD_MCP_TOKEN}"
+      }
+    }
+  }
+}
