@@ -4,14 +4,14 @@
       "command": "python",
       "args": ["server.py"],
       "env": {
-        "MCD_MCP_TOKEN": "2Stn2NhWWaaQP2lVwOqxiunC9lbWOMCA"
+        "MCD_MCP_TOKEN": "${MCD_MCP_TOKEN}"
       }
     },
     "mcd-mcp": {
       "type": "streamablehttp",
       "url": "https://mcp.mcd.cn",
       "headers": {
-        "Authorization": "Bearer 2Stn2NhWWaaQP2lVwOqxiunC9lbWOMCA"
+        "Authorization": "Bearer ${MCD_MCP_TOKEN}"
       }
     }
   }
